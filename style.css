@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Kings', cursive;
+
+}
+
+button{
+    background-color: transparent;
+    display: grid;
+    border: none;
+   width: 75px;
+   height: 75px;
+   color: #ffff;
+   font-size: 27px;
+   padding: 5px;
+   place-items: center;
+   cursor: pointer;
+}
+
+button:hover{
+
+    background-color: blue;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #091922;
+}
+
+.display{
+    position: relative;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px,5px,30px rgba(0,0,0,0.2);   
+    display: grid;
+}
+
+#displayHud{
+    grid-column: span 4;
+    height: 140px;
+    width: 300px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding: 10px;
+    background-color: transparent;
+    color: #ffff;
+    font-size: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);
+
+}
+
+#iqual{
+    grid-column: span 2;
+    width:  100%;
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+
+    
+}
+
+#iqual:hover{
+    background-color: green;
+}
+
+#del:hover{
+    background-color: red;
+}
+
+#clear:hover{
+    background-color: orange;
+  
+}
+
+.sinals:hover{
+    background-color: rgba(255, 244, 83, 0.932);
+    color: #091922;
+    
+}
